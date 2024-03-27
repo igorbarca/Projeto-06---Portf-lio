@@ -1,15 +1,15 @@
-//Variáveis de cores
-$color-white: #FFFFFF;
-$color-green: #29AE81;
-$color-brown: #A4A4A4;
-$color-black: #000000;
+// Variaveis de cores
+$color-white:       #FFFFFF;
+$color-green:       #29AE81;
+$color-marrom:      #A4A4A4;
+$color-black:       #000000;
 
-//Variáveis de Media Queries
-$media-mobile-s: 320px;
-$media-mobile-m: 375px;
-$media-mobile-l: 425px;
-$media-mobile-tablet: 768px;
-$media-desktop: 1024px;
+// Variaveis Media Queries
+$media-mobile-s:        320px;
+$media-mobile-m:        375px;
+$media-mobile-l:        425px;
+$media-tablet:          768px;
+$media-desktop:         1024px;
 
 // Mixins de fontes
 
@@ -23,7 +23,7 @@ $media-desktop: 1024px;
     font-weight: 500;
 }
 
-@mixin font-paragraph {
+@mixin font-paragraf {
     font-family: 'Ruda', sans-serif;
     font-weight: 400;
 }

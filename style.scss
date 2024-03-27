@@ -8,17 +8,16 @@
 }
 
 html, body {
-    @include config.font-paragraph;
+    @include config.font-paragraf;
     width: 100%;
     height: 100%;
     font-size: 18px;
 }
-
 .webview {
     width: 100%;
     margin: auto;
 
-    .intro{
+    .intro {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -28,6 +27,7 @@ html, body {
         color: config.$color-white;
 
         .container {
+
             h1 {
                 font-size: 2rem;
                 text-align: center;
@@ -47,13 +47,14 @@ html, body {
                 margin-top: 8px;
 
                 .btn-portfolio {
-                    @include config.font-paragraph;
+                    @include config.font-paragraf;
                     width: 160px;
                     height: 35px;
                     border-radius: 6px;
                     border: 1px solid config.$color-white;
                     background-color: transparent;
                     color: config.$color-white;
+                    cursor: pointer;
                 }
             }
         }
@@ -61,12 +62,13 @@ html, body {
 }
 
 .webview {
+
     .sobre {
         width: 100%;
 
         .container {
             padding: 10px;
-            
+
             .title {
                 width: 100%;
                 text-align: center;
@@ -102,7 +104,7 @@ html, body {
                     width: 100%;
 
                     p {
-                        @include config.font-paragraph;
+                        @include config.font-paragraf;
                         text-align: justify;
                         margin-bottom: 20px;
                     }
@@ -118,7 +120,7 @@ html, body {
                                 width: 100%;
 
                                 h3 {
-                                    @include config.font-paragraph;
+                                    @include config.font-paragraf;
                                     font-size: 1rem;
                                     font-weight: bold;
                                 }
@@ -135,6 +137,7 @@ html, body {
                                     position: relative;
                                     display: flex;
                                     flex-direction: row;
+                                    align-items: center;
                                     width: 100%;
                                     height: 6px;
                                     border-radius: 6px;
@@ -144,7 +147,7 @@ html, body {
                                     }
 
                                     span {
-                                        @include config.font-paragraph;
+                                        @include config.font-paragraf;
                                         margin-left: 10px;
                                     }
                                 }
@@ -158,7 +161,8 @@ html, body {
 }
 
 .webview {
-    .services {
+
+    .servicos {
         width: 100%;
         background-color: config.$color-green;
         color: config.$color-white;
@@ -173,7 +177,7 @@ html, body {
                 margin-bottom: 30px;
 
                 h2 {
-                    @include config.font-paragraph;
+                    @include config.font-paragraf;
                     font-size: 1.6rem;
                     font-weight: bold;
                     color: config.$color-white;
@@ -202,7 +206,7 @@ html, body {
                             padding: 10px;
 
                             p {
-                                @include config.font-paragraph;
+                                @include config.font-paragraf;
                                 font-size: 1.6rem;
                                 font-weight: bold;
                             }
@@ -224,12 +228,12 @@ html, body {
                                 width: 100%;
                                 margin-bottom: 10px;
 
-                                span {
+                                span i {
                                     font-size: 38px;
                                 }
                             }
 
-                            .text {
+                            .texto {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: center;
@@ -238,16 +242,14 @@ html, body {
                                 min-height: 10px;
 
                                 p {
-                                    @include config.font-paragraph;
+                                    @include config.font-paragraf;
                                     text-align: center;
                                     font-size: 1.4rem;
                                 }
                             }
                         }
-
                     }
                 }
-
             }
         }
     }
@@ -263,7 +265,7 @@ html, body {
             padding: 10px;
 
             .p-title {
-                width: 100px;
+                width: 100%;
                 text-align: center;
                 margin-top: 20px;
                 margin-bottom: 30px;
@@ -273,7 +275,6 @@ html, body {
                     font-size: 1.6rem;
                     font-weight: bold;
                     color: config.$color-green;
-                    text-align: center;
                 }
             }
 
@@ -298,12 +299,13 @@ html, body {
                             position: relative;
 
                             &:hover {
+                                
                                 .descricao {
                                     position: absolute;
                                     display: flex;
                                     width: 100%;
                                     height: 50px;
-                                    background-color: #29ae81;
+                                    background-color: #29AE81;
                                     bottom: 0;
                                     left: 0;
                                     z-index: 9999;
@@ -335,10 +337,9 @@ html, body {
 
                             p {
                                 display: none;
-                                @include config.font-paragraph;
+                                @include config.font-paragraf;
                                 color: config.$color-white;
                             }
-
                         }
                     }
                 }
@@ -384,31 +385,31 @@ html, body {
                             min-height: 70px;
 
                             label {
-                                @include config.font-paragraph;
+                                @include config.font-paragraf;
                                 font-weight: bold;
                                 color: config.$color-green;
                             }
 
                             input {
-                                @include config.font-paragraph;
+                                @include config.font-paragraf;
                                 width: 100%;
                                 height: 30px;
                                 padding: 10px;
                                 border: 1px solid config.$color-green;
 
                                 &:active {
-                                    border: 1px solid config.$color-brown;
+                                    border: 1px solid config.$color-green;
                                     border-radius: 2px;
                                 }
 
                                 &:focus {
-                                    border: 1px solid config.$color-brown;
+                                    border: 1px solid config.$color-green;
                                     border-radius: 2px;
                                 }
                             }
 
                             textarea {
-                                @include config.font-paragraph;
+                                @include config.font-paragraf;
                                 width: 100%;
                                 height: 180px;
                                 padding: 10px;
@@ -416,19 +417,19 @@ html, body {
                                 outline: none;
 
                                 &:active {
-                                    border: 4px solid config.$color-brown;
+                                    border: 1px solid config.$color-green;
                                     border-radius: 2px;
                                 }
 
                                 &:focus {
-                                    border: 4px solid config.$color-brown;
+                                    border: 1px solid config.$color-green;
                                     border-radius: 2px;
                                 }
                             }
                         }
 
                         .btn-form-send {
-                            @include config.font-paragraph;
+                            @include config.font-paragraf;
                             margin-top: 20px;
                             width: 140px;
                             height: 40px;
@@ -436,12 +437,13 @@ html, body {
                             background-color: config.$color-green;
                             color: config.$color-white;
                             border-radius: 2px;
+                            cursor: pointer;
 
                             &:hover {
                                 background-color: config.$color-green;
                             }
 
-                            &:hactive {
+                            &:active {
                                 background-color: config.$color-green;
                             }
                         }
@@ -452,21 +454,24 @@ html, body {
     }
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: config.$color-green;
+.webview {
 
-    span {
-        @include config.font-paragraph;
-        color: config.$color-white;
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: config.$color-green;
+
+        span {
+            @include config.font-paragraf;
+            color: config.$color-white;
+        }
     }
-
 }
+
 
 @media only screen and (min-width: config.$media-mobile-l) {
     .webview .intro {
